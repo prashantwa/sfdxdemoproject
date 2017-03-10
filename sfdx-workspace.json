@@ -6,9 +6,6 @@
     },
 	{
       "Path": "force-app"
-    },
-	{
-      "Path": "sfdxsrc"
     }
   ],
   "Namespace": "",
