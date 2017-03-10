@@ -50,7 +50,7 @@
             "sourcePath": "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\sfdxcode\\main\\default\\classes",
             "isDirectory": true,
             "size": 0,
-            "modifiedTime": 1488897241233,
+            "modifiedTime": 1489128226398,
             "changeTime": 1488897241233,
             "contentHash": "b992a709aee69f72574c57f36ad343915444ceac",
             "isMetadataFile": false,
@@ -64,14 +64,13 @@
         {
             "sourcePath": "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\sfdxcode\\main\\default\\classes\\SalesforceDXDemoController.cls",
             "isDirectory": false,
-            "size": 114,
-            "modifiedTime": 1488897241234,
-            "changeTime": 1488897241234,
-            "contentHash": "f1b40f9b3b311af196181200f9474f2dae524578",
+            "size": 141,
+            "modifiedTime": 1489128226397,
+            "changeTime": 1489128226398,
+            "contentHash": "7ecb5ef080179aa9fc39396194bf6ddddee2c007",
             "isMetadataFile": false,
             "state": "u",
-            "isWorkspace": false,
-            "isArtifactRoot": false
+            "isWorkspace": false
         }
     ],
     [
@@ -111,23 +110,23 @@
             "sourcePath": "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\sfdxcode\\main\\default\\pages\\SalesforceDXDemo.page",
             "isDirectory": false,
             "isMetadataFile": false,
-            "size": 135,
-            "modifiedTime": 1488958919014,
-            "changeTime": 1488958919014,
-            "contentHash": "7ee141b141a21119f095061580838b6b4553b8dc"
+            "size": 163,
+            "modifiedTime": 1489128589339,
+            "changeTime": 1489128589339,
+            "contentHash": "70d810928c0799d263c8650d5c57c87d218c79f2"
         }
     ],
     [
         "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\sfdxcode\\main\\default\\pages\\SalesforceDXDemo.page-meta.xml",
         {
+            "state": "u",
             "sourcePath": "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\sfdxcode\\main\\default\\pages\\SalesforceDXDemo.page-meta.xml",
             "isDirectory": false,
-            "size": 292,
-            "modifiedTime": 1488958326271,
-            "changeTime": 1488958326271,
-            "contentHash": "ebefd195b8e7602bc0243fae4797bdf24e10023b",
             "isMetadataFile": true,
-            "state": "u"
+            "size": 292,
+            "modifiedTime": 1489128589338,
+            "changeTime": 1489128589338,
+            "contentHash": "ebefd195b8e7602bc0243fae4797bdf24e10023b"
         }
     ],
     [
@@ -191,33 +190,17 @@
         }
     ],
     [
-        "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\sfdxsrc",
-        {
-            "sourcePath": "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\sfdxsrc",
-            "isDirectory": true,
-            "size": 0,
-            "modifiedTime": 1488897101904,
-            "changeTime": 1488897101904,
-            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
-            "isMetadataFile": false,
-            "state": "u",
-            "isWorkspace": false,
-            "isArtifactRoot": true
-        }
-    ],
-    [
         "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo",
         {
             "sourcePath": "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo",
             "isDirectory": true,
             "size": 0,
-            "modifiedTime": 1488894732739,
-            "changeTime": 1488896896790,
-            "contentHash": "9b46979e9a2828d2a338e4a8c2d93215ed26450a",
+            "modifiedTime": 1489127470387,
+            "changeTime": 1489127470387,
+            "contentHash": "d6bda8f2817307f2584046563c5a8d1e5e1095b4",
             "isMetadataFile": false,
             "state": "u",
-            "isWorkspace": true,
-            "isArtifactRoot": false
+            "isWorkspace": true
         }
     ]
 ]
