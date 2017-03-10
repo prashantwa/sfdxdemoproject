@@ -1,0 +1,17 @@
+{
+  "PackageDirectories": [
+    {
+      "Path": "sfdxcode",
+      "Default": true
+    },
+	{
+      "Path": "force-app"
+    },
+	{
+      "Path": "sfdxsrc"
+    }
+  ],
+  "Namespace": "",
+  "SfdcLoginUrl": "https://login.salesforce.com",
+  "SourceApiVersion": "39.0"
+}

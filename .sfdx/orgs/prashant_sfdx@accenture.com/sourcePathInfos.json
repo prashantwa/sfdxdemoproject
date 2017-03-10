@@ -1,0 +1,227 @@
+[
+    [
+        "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\sfdxcode",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\sfdxcode",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1488897241200,
+            "changeTime": 1488897241200,
+            "contentHash": "b28b7af69320201d1cf206ebf28373980add1451",
+            "isWorkspace": false,
+            "isArtifactRoot": true
+        }
+    ],
+    [
+        "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\sfdxcode\\main",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\sfdxcode\\main",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1488897241201,
+            "changeTime": 1488897241201,
+            "contentHash": "7505d64a54e061b7acd54ccd58b49dc43500b635",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\sfdxcode\\main\\default",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\sfdxcode\\main\\default",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1488897241234,
+            "changeTime": 1488897241234,
+            "contentHash": "0803afd433bedf4fb3c621888196f3a590a9c016",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\sfdxcode\\main\\default\\classes",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\sfdxcode\\main\\default\\classes",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1488897241233,
+            "changeTime": 1488897241233,
+            "contentHash": "b992a709aee69f72574c57f36ad343915444ceac",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\sfdxcode\\main\\default\\classes\\SalesforceDXDemoController.cls",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\sfdxcode\\main\\default\\classes\\SalesforceDXDemoController.cls",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 114,
+            "modifiedTime": 1488897241234,
+            "changeTime": 1488897241234,
+            "contentHash": "f1b40f9b3b311af196181200f9474f2dae524578",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\sfdxcode\\main\\default\\classes\\SalesforceDXDemoController.cls-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\sfdxcode\\main\\default\\classes\\SalesforceDXDemoController.cls-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 174,
+            "modifiedTime": 1488897241232,
+            "changeTime": 1488897241232,
+            "contentHash": "d3aef1962f612e7e3db36e965fa06b72bf50ee30",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\sfdxcode\\main\\default\\pages",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\sfdxcode\\main\\default\\pages",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1488897241236,
+            "changeTime": 1488897241236,
+            "contentHash": "9927a6de7def1a1a8ce13ab14c5e6bdce350dc9f",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\sfdxcode\\main\\default\\pages\\SalesforceDXDemo.page",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\sfdxcode\\main\\default\\pages\\SalesforceDXDemo.page",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 88,
+            "modifiedTime": 1488897241236,
+            "changeTime": 1488897241236,
+            "contentHash": "2bdeab2c476efbfa9002aa188c8d7966fb69452c",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\sfdxcode\\main\\default\\pages\\SalesforceDXDemo.page-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\sfdxcode\\main\\default\\pages\\SalesforceDXDemo.page-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 292,
+            "modifiedTime": 1488897241235,
+            "changeTime": 1488897241235,
+            "contentHash": "ebefd195b8e7602bc0243fae4797bdf24e10023b",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\force-app",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\force-app",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1488814283629,
+            "changeTime": 1488814283629,
+            "contentHash": "b28b7af69320201d1cf206ebf28373980add1451",
+            "isWorkspace": false,
+            "isArtifactRoot": true
+        }
+    ],
+    [
+        "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\force-app\\main",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\force-app\\main",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1488814283630,
+            "changeTime": 1488814283630,
+            "contentHash": "7505d64a54e061b7acd54ccd58b49dc43500b635",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\force-app\\main\\default",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\force-app\\main\\default",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1488814283630,
+            "changeTime": 1488814283630,
+            "contentHash": "2c2a89c1c45d2977cfce538e475902f5520f4382",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\force-app\\main\\default\\aura",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\force-app\\main\\default\\aura",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1488814283630,
+            "changeTime": 1488814283630,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\sfdxsrc",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo\\sfdxsrc",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1488897101904,
+            "changeTime": 1488897101904,
+            "contentHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+            "isWorkspace": false,
+            "isArtifactRoot": true
+        }
+    ],
+    [
+        "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo",
+        {
+            "state": "n",
+            "sourcePath": "C:\\Users\\p.rameshwar.wayal\\salesforcedxdemo",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 0,
+            "modifiedTime": 1488894732739,
+            "changeTime": 1488896896790,
+            "contentHash": "9b46979e9a2828d2a338e4a8c2d93215ed26450a",
+            "isWorkspace": true,
+            "isArtifactRoot": false
+        }
+    ]
+]

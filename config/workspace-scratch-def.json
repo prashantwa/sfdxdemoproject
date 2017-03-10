@@ -1,0 +1,10 @@
+{
+  "Company": "AccentureDev",
+  "Country": "IN",
+  "LastName": "Wayal",
+  "Email": "p.rameshwar.wayal@accenture.com",
+  "Edition": "Developer",
+  "OrgPreferences" : {
+    "S1DesktopEnabled" : true
+  }
+}

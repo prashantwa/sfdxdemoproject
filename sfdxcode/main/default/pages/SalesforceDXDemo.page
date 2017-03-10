@@ -1,0 +1,6 @@
+<apex:page controller="SalesforceDXDemoController">
+    Welcome {!name} !!!
+    <br/>
+    This is your home page :)
+	<br/>
+</apex:page>
