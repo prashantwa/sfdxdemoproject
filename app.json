@@ -1,0 +1,16 @@
+{
+  "name": "sfdxdemoproject",
+  "description": "Review app for sfdxdemoproject",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
