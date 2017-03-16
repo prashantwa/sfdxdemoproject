@@ -3,9 +3,6 @@
     {
       "Path": "sfdxcode",
       "Default": true
-    },
-	{
-      "Path": "force-app"
     }
   ],
   "Namespace": "",
