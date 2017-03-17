@@ -27,6 +27,11 @@ node {
     withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]) {
         stage('Create Scratch Org') {
 			
+			echo 'key1: ' + ${CONNECTED_APP_CONSUMER_KEY}
+			echo 'user1: ' + ${HUB_ORG}
+			echo 'host1: ' + ${SFDC_HOST}
+			echo 'id1: ' + ${jwt_key_file}
+			
             rc = sh returnStatus: true, script: "${toolbelt}/sfdx force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile ${jwt_key_file} --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
             if (rc != 0) { error 'hub org authorization failed' }
 
