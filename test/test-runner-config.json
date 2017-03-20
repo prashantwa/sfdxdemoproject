@@ -83,6 +83,12 @@
             "tests": ["PropertyControllerTest"]
         },
         {
+            "name": "basic",
+            "orgs": ["dreamhouse-default"],
+            "testCommand": "apex",
+            "tests": ["SalesforceDXDemoControllerTest"]
+        },
+        {
             "name": "integration",
             "orgs": ["dreamhouse-default"],
             "testCommand": "run-integration-tests",
