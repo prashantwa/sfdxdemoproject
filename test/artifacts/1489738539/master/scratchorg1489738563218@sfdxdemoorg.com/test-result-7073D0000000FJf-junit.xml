@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="force.apex" timestamp="2017-03-17T13:47:43+05:30" hostname="https://flow-velocity-9727-dev-ed.cs70.my.salesforce.com" tests="2" failures="0"  errors="0"  time="0.13">
+        <properties>
+            <property name="outcome" value="Passed"/>
+            <property name="testsRan" value="2"/>
+            <property name="passing" value="2"/>
+            <property name="failing" value="0"/>
+            <property name="passRate" value="100%"/>
+            <property name="failRate" value="0%"/>
+            <property name="testStartTime" value="Mar 17, 2017 1:47 PM"/>
+            <property name="testExecutionTime" value="0.13 s"/>
+            <property name="testTotalTime" value="0.13 s"/>
+            <property name="commandTime" value="18.67 s"/>
+            <property name="testRunId" value="7073D0000000FJf"/>
+            <property name="hostname" value="https://flow-velocity-9727-dev-ed.cs70.my.salesforce.com"/>
+            <property name="orgId" value="00D3D000000CoWzUAK"/>
+            <property name="username" value="scratchorg1489738563218@sfdxdemoorg.com"/>
+            <property name="userId" value="0053D000000DoWNQA0"/>
+        </properties>
+        <testcase name="testFindAll" classname="PropertyControllerTest"  time="0.09">
+        </testcase>
+        <testcase name="testFindById" classname="PropertyControllerTest"  time="0.04">
+        </testcase>
+    </testsuite>
+</testsuites>

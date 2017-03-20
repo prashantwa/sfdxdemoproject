@@ -1,0 +1,4 @@
+1..2
+ok 1 PropertyControllerTest.testFindAll
+ok 2 PropertyControllerTest.testFindById
+# Use command "force:apex:test:report -i 7073D0000000FJf" to retrieve test results.
