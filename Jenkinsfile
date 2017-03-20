@@ -27,7 +27,7 @@ node {
             // need to pull out assigned username
             rmsg = sh returnStdout: true, script: "\'${toolbelt}/\'"+"sfdx _ force:org:create --definitionfile config/workspace-scratch-def.json --json --setdefaultusername"
             printf '*** json *** '+rmsg
-            echo '*** file content *** '+ cat $rmsg
+            echo '*** file content *** '+ rmsg
             def jsonSlurper = new JsonSlurperClassic()
             def robj = jsonSlurper.parseText(rmsg)
             if (robj.status != "ok") { error 'org creation failed: ' + robj.message }
