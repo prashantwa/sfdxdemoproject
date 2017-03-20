@@ -83,7 +83,7 @@
             "tests": ["PropertyControllerTest"]
         },
         {
-            "name": "basic",
+            "name": "basic1",
             "orgs": ["dreamhouse-default"],
             "testCommand": "apex",
             "tests": ["SalesforceDXDemoControllerTest"]
@@ -113,12 +113,14 @@
             "default": true,
             "refs": [
                 "basic",
+                "basic1",
                 "integration"
             ]
         }, {
             "name": "master-aloha",
             "refs": [
                 "basic",
+                "basic1",
                 "integration-aloha"
             ]
         }
