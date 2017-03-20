@@ -56,7 +56,8 @@ node {
                     error 'apex test run failed'
                 }
                 else{
-                echo '*** test result *** '+rc
+                	echo '*** rc *** '+rc
+                }
             }
         }
 
