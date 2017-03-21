@@ -23,13 +23,8 @@ node {
 			//C:\'\\'Users\'\\'p.rameshwar.wayal\'\\'SFDXKeys\'\\'server.key
             rc = sh returnStatus: true, script: "\'${toolbelt}\'/"+"sfdx _ force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile C:\'\\'Users\'\\'p.rameshwar.wayal\'\\'SFDXKeys\'\\'server.key --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
             //rc = sh returnStatus:true, script: "\'${toolbelt}\'/"+"sfdx _ force:auth:web:login -i ${CONNECTED_APP_CONSUMER_KEY} -r ${SFDC_HOST} -d"
-            def jsonSlurperObj = new JsonSlurperClassic()
-            def aobj = jsonSlurperObj.parseText(rc)
-            if (aobj.status != "ok") { error 'hub org authorization failed' }
+            if (rc != 0) { error 'hub org authorization failed' }
             else{ echo '*** rc *** '+rc }
-            
-            //if (rc != 0) { error 'hub org authorization failed' }
-            //else{ echo '*** rc *** '+rc }
 
             // need to pull out assigned username
             /*def rmsg = sh returnStdout: true, script: "\'${toolbelt}\'/"+"sfdx _ force:org:create --definitionfile config/workspace-scratch-def.json --json --setdefaultusername"
