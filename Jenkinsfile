@@ -23,7 +23,7 @@ node {
 			//C:\'\\'Users\'\\'p.rameshwar.wayal\'\\'SFDXKeys\'\\'server.key
             rc = sh returnStdout: true, script: "\'${toolbelt}\'/"+"sfdx _ force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile \'${jwt_key_file}\' --setdefaultdevhubusername --instanceurl ${SFDC_HOST} --json"
             def jsonSlurperObj = new JsonSlurperClassic()
-            def aobj = jsonSlurper.parseText(rc)
+            def aobj = jsonSlurperObj.parseText(rc)
             if (aobj.status != "ok") { error 'hub org authorization failed' }
             else{ echo '*** rc *** '+rc }
             //if (rc != 0) { error 'hub org authorization failed' }
