@@ -26,9 +26,9 @@ node {
             else{ echo '*** rc *** '+rc }
 
             // need to pull out assigned username
-            def rmsg = sh returnStdout: true, script: "\'${toolbelt}/\'"+"sfdx _ force:org:create --definitionfile config/workspace-scratch-def.json --json --setdefaultusername"
-            println rmsg
-            //echo '*** file content *** '+ rmsg
+            rmsg = sh returnStdout: true, script: "\'${toolbelt}/\'"+"sfdx _ force:org:create --definitionfile config/workspace-scratch-def.json --json --setdefaultusername"
+            //println rmsg
+            echo '*** rmsg *** '+ rmsg
             def jsonSlurper = new JsonSlurperClassic()
             def robj = jsonSlurper.parseText(rmsg)
             if (robj.status != "ok") { error 'org creation failed: ' + robj.message }
