@@ -22,6 +22,7 @@ node {
         stage('Create Scratch Org') {
 			//C:\'\\'Users\'\\'p.rameshwar.wayal\'\\'SFDXKeys\'\\'server.key
             rc = sh returnStdout: true, script: "\'${toolbelt}\'/"+"sfdx _ force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile C:\'\\'Users\'\\'p.rameshwar.wayal\'\\'SFDXKeys\'\\'server.key --setdefaultdevhubusername --instanceurl ${SFDC_HOST} --json"
+            rc = sh returnStatus:true, script "\'${toolbelt}\'/"+"sfdx _ force:auth:web:login -i ${CONNECTED_APP_CONSUMER_KEY} -r ${SFDC_HOST} -d"
             def jsonSlurperObj = new JsonSlurperClassic()
             def aobj = jsonSlurperObj.parseText(rc)
             if (aobj.status != "ok") { error 'hub org authorization failed' }
