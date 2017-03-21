@@ -33,10 +33,11 @@ node {
             def robj = jsonSlurper.parseText(rmsg)
             if (robj.status != "ok") { error 'org creation failed: ' + robj.message }
             SFDC_USERNAME=robj.username
+            echo '*** user Name *** '+SFDC_USERNAME
             robj = null
 
         }
-
+		/*
         stage('Push To Test Org') {
             rc = sh returnStatus: true, script: "\'${toolbelt}/\'"+"sfdx _ force:source:push --targetusername ${SFDC_USERNAME}"
             if (rc != 0) {
@@ -61,6 +62,6 @@ node {
 
         stage('collect results') {
             junit keepLongStdio: true, testResults: 'tests/**/*-junit.xml'
-        }
+        } */
     }
 }
