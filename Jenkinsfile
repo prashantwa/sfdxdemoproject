@@ -20,10 +20,10 @@ node {
 
     withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]) {
         stage('Authorize') {
-            rc = sh returnStatus: true, script: "${toolbelt}/sfdx _ force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile \'${jwt_key_file}\' --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
-            if (rc != 0) { error 'hub org authorization failed' }
+            rc = sh returnStatus: true, script: "${toolbelt}/sfdx force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile \'${jwt_key_file}\' --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
+            /*if (rc != 0) { error 'hub org authorization failed' }
             
-            /* Create Scratch Org */
+             Create Scratch Org 
             def rmsg = sh returnStdout: true, script: "${toolbelt}/sfdx _ force:org:create --definitionfile config/workspace-scratch-def.json --json --setdefaultusername"
             println rmsg
             def jsonSlurper = new JsonSlurperClassic()
@@ -31,7 +31,8 @@ node {
             if (robj.status != "ok") { error 'org creation failed: ' + robj.message }
             SFDC_USERNAME=robj.username
             echo '*** user Name *** '+SFDC_USERNAME
-            robj = null
+            robj = null 
+            */
         }
 
     }
