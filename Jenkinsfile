@@ -21,8 +21,8 @@ node {
     withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]) {
         stage('Create Scratch Org') {
 			
-            rc = sh returnStatus: true, script: "\'${toolbelt}\'/"+"sfdx _ force:auth:jwt:grant -i 3MVG9YDQS5WtC11pWi_GyYnepWRkE5ksP1pQSaX.HxQtZbrwGGLuGJXiKfgFtlXsKTR4.eAubAB33.47sd9_p -r https://login.salesforce.com -f C:/Users/p.rameshwar.wayal/SFDXKeys/server.key -u dxpilot+p.rameshwar.wayal@accenture.com --setdefaultdevhubusername"
-            //rc = sh returnStatus: true, script: "\'${toolbelt}\'/"+"sfdx _ force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile C:\'\\'Users\'\\'p.rameshwar.wayal\'\\'SFDXKeys\'\\'server.key --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
+            //rc = sh returnStatus: true, script: "\'${toolbelt}\'/"+"sfdx _ force:auth:jwt:grant -i 3MVG9YDQS5WtC11pWi_GyYnepWRkE5ksP1pQSaX.HxQtZbrwGGLuGJXiKfgFtlXsKTR4.eAubAB33.47sd9_p -r https://login.salesforce.com -f C:/Users/p.rameshwar.wayal/SFDXKeys/server.key -u dxpilot+p.rameshwar.wayal@accenture.com --setdefaultdevhubusername"
+            rc = sh returnStatus: true, script: "\'${toolbelt}\'/"+"sfdx _ force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile !{jwt_key_file} --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
             //rc = sh returnStatus:true, script: "\'${toolbelt}\'/"+"sfdx _ force:auth:web:login -i ${CONNECTED_APP_CONSUMER_KEY} -r ${SFDC_HOST} -d"
             if (rc != 0) { error 'hub org authorization failed' }
             else{ echo '*** rc *** '+rc }
