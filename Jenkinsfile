@@ -19,7 +19,7 @@ node {
     }
 
     stage('Create Scratch Org') {
-        rc = sh returnStatus: true, script: "C:\'\\'Program Files\'\\'Heroku\'\\'bin\'\\'"+"sfdx _ force:auth:jwt:grant -i 3MVG9YDQS5WtC11pWi_GyYnepWRkE5ksP1pQSaX.HxQtZbrwGGLuGJXiKfgFtlXsKTR4.eAubAB33.47sd9_p -r https://login.salesforce.com -f C:/Users/p.rameshwar.wayal/SFDXKeys/server.key -u dxpilot+p.rameshwar.wayal@accenture.com --setdefaultdevhubusername"
+        rc = sh returnStatus: true, script: "\'C:\'\\'Program Files\'\\'Heroku\'\\'bin\'\\'\'"+"sfdx _ force:auth:jwt:grant -i 3MVG9YDQS5WtC11pWi_GyYnepWRkE5ksP1pQSaX.HxQtZbrwGGLuGJXiKfgFtlXsKTR4.eAubAB33.47sd9_p -r https://login.salesforce.com -f C:/Users/p.rameshwar.wayal/SFDXKeys/server.key -u dxpilot+p.rameshwar.wayal@accenture.com --setdefaultdevhubusername"
         if (rc != 0) { error 'hub org authorization failed' }
         else{ echo '*** rc *** '+rc }
 
