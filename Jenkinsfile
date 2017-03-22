@@ -20,8 +20,8 @@ node {
 
     withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]) {
         stage('Authorize') {
-            rc = sh returnStdio: true, script: "\'${toolbelt}/\'sfdx _ force:org:list -u ${HUB_ORG}"
-            //rc = sh returnStatus: true, script: "\'${toolbelt}/\'sfdx _ force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile \'${jwt_key_file}\' --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
+            //rc = sh returnStdio: true, script: "\'${toolbelt}/\'sfdx _ force:org:list -u ${HUB_ORG}"
+            rc = sh returnStatus: true, script: "${toolbelt}/sfdx _ force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile ${jwt_key_file} --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
             if (rc != 0) { error 'hub org authorization failed' }
             echo '*** rc *** '+rc
         }
