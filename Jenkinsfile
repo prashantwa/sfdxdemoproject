@@ -22,7 +22,7 @@ node {
         stage('Authorize') {
             //rc = sh returnStatus: true, script: "${toolbelt}/sfdx _ force:auth --help"
             //echo '*** demo *** '
-            rc = sh returnStatus: true, script: "${toolbelt}/sfdx _ force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile ${jwt_key_file} --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
+            rc = sh returnStatus: true, script: "${toolbelt}/sfdx _ force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile 'C:\Users\p.rameshwar.wayal\Jenkins\workspace\dx_pipeline_develop-SZ2UJ7X7IQNW7VEWRL6I6NUAYZ3Z3SR5RCEVNQDIODB7QHVK7GNA@tmp\secretFiles\28c95da4-84fd-4dbb-bc9c-ebe3a37c817d\server.key' --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
             if (rc != 0) { error 'hub org authorization failed' }
             
             /*Create Scratch Org 
