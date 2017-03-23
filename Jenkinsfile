@@ -17,7 +17,11 @@ node {
         // when running in multi-branch job, one must issue this command
         checkout scm
     }
-
+	stage('Authorize'){
+		rc = sh returnStatus: true, script: "${toolbelt}/sfdx _ force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile ./workspace/dx_pipeline_develop-SZ2UJ7X7IQNW7VEWRL6I6NUAYZ3Z3SR5RCEVNQDIODB7QHVK7GNA@tmp/secretFiles/28c95da4-84fd-4dbb-bc9c-ebe3a37c817d/server.key --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
+        if (rc != 0) { error 'hub org authorization failed' }
+	}
+	/*
     withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]) {
         stage('Authorize') {
             //rc = sh returnStatus: true, script: "${toolbelt}/sfdx _ force:auth --help"
@@ -25,18 +29,8 @@ node {
             rc = sh returnStatus: true, script: "${toolbelt}/sfdx _ force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile C:\'\\'Users\'\\'p.rameshwar.wayal\'\\'Jenkins\'\\'workspace\'\\'dx_pipeline_develop-SZ2UJ7X7IQNW7VEWRL6I6NUAYZ3Z3SR5RCEVNQDIODB7QHVK7GNA@tmp\'\\'secretFiles\'\\'28c95da4-84fd-4dbb-bc9c-ebe3a37c817d\'\\'server.key --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
             if (rc != 0) { error 'hub org authorization failed' }
             
-            /*Create Scratch Org 
-            def rmsg = sh returnStdout: true, script: "${toolbelt}/sfdx _ force:org:create --definitionfile config/workspace-scratch-def.json --json --setdefaultusername"
-            println rmsg
-            def jsonSlurper = new JsonSlurperClassic()
-            def robj = jsonSlurper.parseText(rmsg)
-            if (robj.status != "ok") { error 'org creation failed: ' + robj.message }
-            SFDC_USERNAME=robj.username
-            echo '*** user Name *** '+SFDC_USERNAME
-            robj = null 
-            */
         }
 
-    }
+    }*/
 
 }
