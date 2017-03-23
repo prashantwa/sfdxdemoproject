@@ -24,8 +24,7 @@ node {
             rc = sh returnStatus: true, script: "C:\'\\'Anbu\'\\'Tools\'sfdx force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile C:\'\\'Anbu\'\\'Innovation\'\\'SalesforceDX\'\\'Pilot\'\\'server.key  --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
             if (rc != 0) { error 'hub org authorization failed' }
 
-            rc = sh returnStatus: true, script: "\'C:/Program Files/Heroku/bin/\'
-
+            
             // need to pull out assigned username
             rmsg = sh returnStdout: true, script: "${toolbelt}/sfdx force:org:create --definitionfile config/workspace-scratch-def.json --json --setdefaultusername"
             printf rmsg
