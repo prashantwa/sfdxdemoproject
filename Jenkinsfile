@@ -24,7 +24,7 @@ node {
         	//C:/Users/p.rameshwar.wayal/Heroku/bin
         	//C:\'\\'Users\'\\'p.rameshwar.wayal\'\\'SFDXKeys\'\\'server.key
         	//'C:/Users/p.rameshwar.wayal/SFDXKeys/server.key'
-			rc = sh returnStatus: true, script: "\'${toolbelt}\'/sfdx force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile ${jwt_key_file} --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
+			rc = sh returnStatus: true, script: "\'${toolbelt}\'/sfdx force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile 'C:/Users/p.rameshwar.wayal/SFDXKeys/server.key' --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
 	        if (rc != 0) { error 'hub org authorization failed' }
 	        
 	        // need to pull out assigned username
