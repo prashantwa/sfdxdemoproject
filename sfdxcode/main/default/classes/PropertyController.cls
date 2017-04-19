@@ -1,5 +1,6 @@
 public with sharing class PropertyController {
 
+	//Comment
     @AuraEnabled
     public static PropertyPagedResult findAll(String searchKey, Decimal minPrice, Decimal maxPrice, Decimal pageNumber) {
         Integer pageSize = 8;
