@@ -4,5 +4,9 @@ public class SalesforceDXDemoController{
     public String getName(){
         return 'Prashant';
     }
-     
+    
+    //New Method
+    public Integer getAge(){
+    	return 27;
+    }
 }
