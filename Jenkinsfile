@@ -57,6 +57,18 @@ node {
                 if (rc != 0) {
                     error 'apex test run failed'
                 }
+                else{
+                	def jsonObj = new JsonSlurperClassic()
+		            def testRes = jsonObj.parseText(rc)
+		            if (testRes.status != "ok") { 
+		            	error 'Test execution failed: '
+		            }
+		            else{
+		            	def jsonObj1 = new JsonSlurperClassic()
+		            	def testResObj = jsonObj1.parseText(testRes.summary);
+		            	echo '*** id *** '+testResObj.testRunId
+		            }
+                }
             }
         }
 
