@@ -53,22 +53,11 @@ node {
         stage('Run Apex Test') {
             sh "mkdir -p ${RUN_ARTIFACT_DIR}"
             timeout(time: 120, unit: 'SECONDS') {
-                rc = sh returnStatus: true, script: "\'${toolbelt}\'/sfdx force:apex:test:run --testlevel RunLocalTests --outputdir ${RUN_ARTIFACT_DIR} --resultformat json --targetusername ${SFDC_USERNAME}"
+                rc = sh returnStatus: true, script: "\'${toolbelt}\'/sfdx force:apex:test:run --testlevel RunLocalTests --outputdir ${RUN_ARTIFACT_DIR} --resultformat tap --targetusername ${SFDC_USERNAME}"
                 if (rc != 0) {
                     error 'apex test run failed'
                 }
-                else{
-                	def jsonObj = new JsonSlurperClassic()
-		            def testRes = jsonObj.parseText(rc)
-		            if (testRes.status != "ok") { 
-		            	error 'Test execution failed: '
-		            }
-		            else{
-		            	def jsonObj1 = new JsonSlurperClassic()
-		            	def testResObj = jsonObj1.parseText(testRes.summary);
-		            	echo '*** id *** '+testResObj.testRunId
-		            }
-                }
+                
             }
         }
 
